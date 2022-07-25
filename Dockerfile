@@ -9,4 +9,4 @@ RUN unzip -d /usr/local/bin /tmp/terraform_${TERRAFORM_VERSION}_linux_amd64.zip 
     chmod +x /usr/local/bin/terraform  && \
     ln -s /usr/local/bin/terraform /usr/bin/terraform
 
-USER runner
+USER 1000:0
