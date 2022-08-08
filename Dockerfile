@@ -9,6 +9,7 @@ RUN unzip -d /usr/local/bin /tmp/terraform_${TERRAFORM_VERSION}_linux_amd64.zip 
     chmod +x /usr/local/bin/terraform  && \
     ln -s /usr/local/bin/terraform /usr/bin/terraform
     
+    
 RUN yum install -y python3-devel 
 RUN yum install -y krb5-devel
 RUN pip install pykerberos
