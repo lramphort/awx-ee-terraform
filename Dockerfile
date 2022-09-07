@@ -16,6 +16,7 @@ RUN pip install --upgrade pip
 RUN pip install pykerberos
 RUN pip install pywinrm
 RUN pip install requests-credssp
+RUN pip uninstall pyOpenSSL
 RUN pip install pyOpenSSL
 
 USER 1000:0
