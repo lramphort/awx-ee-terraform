@@ -15,5 +15,6 @@ RUN yum install -y krb5-devel
 RUN pip install pykerberos
 RUN pip install pywinrm
 RUN pip install requests-credssp
+RUN pip install pyOpenSSL
 
 USER 1000:0
